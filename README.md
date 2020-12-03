@@ -51,3 +51,24 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 User: admin@localhost
 Password: adminpassword
+
+## Views
+
+Home:
+
+![](docs/home.png)
+
+Sign In:
+
+![](docs/signin.png)
+
+Sign Up:
+
+![](docs/signup.png)
+
+Admin view:
+![](docs/admin_view.png)
+
+Users:
+
+![](docs/users.png)
