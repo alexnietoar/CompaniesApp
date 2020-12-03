@@ -1,0 +1,161 @@
+body{
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo-sm {
+    width: 20%;
+}
+
+.name {
+    width: 60%;
+}
+
+.bg-nav {
+    background-color: #0808087a!important;
+}
+
+a:hover{
+    color: #af0404!important;
+}
+
+a.active{
+    color: #af0404!important;
+    background-color:  rgb(138, 29, 29);
+}
+
+.dropdown-item:hover{
+    color: #af0404!important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #555555!important;
+    background-color:  rgb(68, 68, 68);
+}
+
+.dropdown-menu.show {
+    display: block;
+    margin-left: -53px;
+}
+
+.page-footer {
+    background: #0808087a;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+}
+
+
+.footer-copyright {
+    background: #171717;
+    font-style: oblique;
+    color: aliceblue;
+}
+
+.white-text {
+    color: aliceblue;
+}
+
+.black-text {
+    color: rgb(36, 36, 36);
+}
+
+.black-text:hover {
+    color: #af0404!important;
+}
+
+.flex-center {
+
+}
+
+.btn-principal {
+    color: #fff;
+    background-color: #5d5d5d;
+    border-color: #2d2d2d;
+}
+
+.btn-principal:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(102, 18, 25, 0.699);
+}
+
+.btn-modify {
+    color: #fff;
+    background-color: #5d5d5d;
+    border-color: #2d2d2d;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    margin-bottom: 2px;
+}
+
+.btn-dangerr {
+    color: #fff;
+    background-color: #af0404;
+    border-color: #2d2d2d;
+}
+
+.form-control:focus {
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.dropdown-menu a{
+    color: #8d212186 !important;
+}
+
+.dropdown-item a{
+    color: #8d212186 !important;
+}
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -7%;
+    margin-left: -4%;
+}
+
+.table {
+    border-radius: 9px;
+    display: block;
+}
+
+.table-header {
+    background: #333333;
+    background: -webkit-linear-gradient(to left, #dd1818, #333333);
+    background: linear-gradient(to left, #dd1818, #333333);
+    font-size: 15px;
+    text-align: center;
+    color: aliceblue;
+    font-family: system-ui;
+}
+
+.card-table {
+    position: unset;
+    display: -ms-flexbox;
+    display: table;
+}
+
+.card-body-table {
+    background: white;
+}
+
+.table-body{
+    background: white;
+    font-size: 13px;
+    text-align: initial;
+}

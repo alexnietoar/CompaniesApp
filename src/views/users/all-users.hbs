@@ -1,0 +1,53 @@
+<div class="card-table">
+    {{#if user.admin}}
+    <div class="card-body-table">
+        <table class="table">
+            <thead class="table-header">
+                <tr>
+                    <th scope="col">Company Id</th>
+                    <th scope="col">Document Number</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Lastname</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Creation Date</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+                {{#each users}}
+                {{#unless admin}}
+                    <tr>
+                        <th>{{companyId}}</th>
+                        <td>{{profile.0.documentNumber}}</td>
+                        <td>{{profile.0.name}}</td>
+                        <td>{{profile.0.lastname}}</td>
+                        <td>{{email}}</td>
+                        <td>{{profile.0.age}}</td>
+                        <td>{{profile.0.gender}}</td>
+                        <td>{{date}}</td>
+                        <td>
+                            <a href="/users/profile/{{_id}}" class="btn btn-modify btn-lg">Modify</a>
+                            <form action="/users/delete/{{_id}}?_method=DELETE" method="POST">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button class="btn btn-dangerr btn-block btn-sm" type="submit">
+                                    Delete
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                {{/unless}}
+                {{else}}
+                    <div class="card mx-auto">
+                        <div class="card-body">
+                            <h1>Hello {{user.profile.0.name}}</h1>
+                            <p class="lead">There are not users yet.</p>
+                            <a href="/companies/add" class="btn btn-success btn-block">Register one!</a>
+                        </div>
+                    </div>
+            {{/each}}
+            </tbody>
+        </table>
+    {{/if}}
+</div>
